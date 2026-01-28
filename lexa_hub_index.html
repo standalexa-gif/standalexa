@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lexa Coaching Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {background: linear-gradient(135deg,#74ebd5,#ACB6E5);}
+    .card {border:none; border-radius:16px; box-shadow:0 10px 20px rgba(0,0,0,.15);} 
+    .card:hover {transform: translateY(-3px); transition:.2s ease;}
+    .hero {padding: 40px 0;}
+    .tile-icon {font-size: 28px;}
+    .footer {font-size:.9rem; color:#fff; opacity:.9;}
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <header class="hero text-center text-white">
+      <h1 class="fw-bold">Lexa Coaching Hub</h1>
+      <p class="lead">Moje nástroje, agenti a materiály na jednom místě</p>
+    </header>
+
+    <section>
+      <div class="row g-4">
+        <!-- SSC Agent tile -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="text-decoration-none" href="/ssc-agent/" target="_blank">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="tile-icon me-2">🧭</span>
+                  <h5 class="card-title mb-0">SSC Agent</h5>
+                </div>
+                <p class="card-text">Strukturované shrnutí Start / Stop / Continue, přepínač tónu e‑mailu, PDF export, offline PWA.</p>
+                <span class="badge bg-primary">PWA</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Coaching Planner (placeholder) -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="text-decoration-none" href="#" onclick="alert('Brzy přidáme odkaz – zatím placeholder.'); return false;">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="tile-icon me-2">📅</span>
+                  <h5 class="card-title mb-0">Coaching Planner</h5>
+                </div>
+                <p class="card-text">Plánování schůzek, follow‑upy, cíle. (placeholder – připravíme jako další projekt)</p>
+                <span class="badge bg-secondary">Brzy</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Notes Agent (placeholder) -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <a class="text-decoration-none" href="#" onclick="alert('Brzy přidáme odkaz – zatím placeholder.'); return false;">
+            <div class="card h-100">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-2">
+                  <span class="tile-icon me-2">📝</span>
+                  <h5 class="card-title mb-0">Notes Agent</h5>
+                </div>
+                <p class="card-text">Zpracování poznámek „Lexa styl“ do akcí a shrnutí. (placeholder – další projekt)</p>
+                <span class="badge bg-secondary">Brzy</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Jak přidat další projekt</h5>
+          <ol class="mb-0">
+            <li>Vytvořte nový veřejný repozitář, např. <code>coach-planner</code>.</li>
+            <li>Nahrajte do něj své soubory (např. <code>index.html</code>, <code>manifest.webmanifest</code>, <code>sw.js</code>, ikony).</li>
+            <li>Zapněte GitHub Pages: Settings → Pages → Deploy from branch (main / root). URL bude <code>/coach-planner/</code>.</li>
+            <li>Sem na hub stránku doplňte odkaz: <code>&lt;a href="/coach-planner/"&gt;...&lt;/a&gt;</code>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-4 text-center footer">
+      <p class="mb-1">© Lexa Stanislav — Coaching Hub</p>
+      <p class="mb-0">Tip: Na iPhonu přidejte tuto stránku i jednotlivé projekty na plochu (Sdílet → Přidat na plochu).</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
