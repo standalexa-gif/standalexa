@@ -1,1 +1,72 @@
-<!DOCTYPE html><html lang="cs"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>Lexa Coaching Hub – Varianta A</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><style> body {background: linear-gradient(135deg, #0d0f12, #1b1f27); color:#fff; font-family:Arial, sans-serif;} .hero {display:flex; gap:32px; align-items:center; padding:40px 0;} .hero-text h1 {font-size:2.4rem; font-weight:700; margin-bottom:8px;} .hero-text p {opacity:.85; font-size:1.1rem;} .avatar {width:260px; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,.5);} .tile {background:rgba(255,255,255,0.06); padding:22px; border-radius:14px; box-shadow:0 6px 14px rgba(0,0,0,.3);} .tile h5 {color:#4fd2ff;} </style></head><body><div class="container py-5"><div class="hero"><img src="avatar.png" alt="avatar" class="avatar"><div class="hero-text"><h1>Lexa Coaching Hub</h1><p>Moje AI nástroje, agenti a coachingové pomůcky na jednom místě.</p><a href="/ssc-agent/" class="btn btn-info mt-2">Otevřít SSC Agenta</a></div></div><div class="row g-4 mt-4"><div class="col-12 col-md-4"><div class="tile"><h5>SSC Agent</h5><p>Start / Stop / Continue, e‑maily, PDF export, PWA.</p><a href="/ssc-agent/" class="btn btn-outline-info btn-sm">Otevřít</a></div></div><div class="col-12 col-md-4"><div class="tile"><h5>Coaching Planner</h5><p>Plánování schůzek, úkolů a cílů (brzy).</p><button class="btn btn-outline-secondary btn-sm" disabled>Brzy</button></div></div><div class="col-12 col-md-4"><div class="tile"><h5>Notes Agent</h5><p>Zpracování poznámek podle "Lexa stylu" (brzy).</p><button class="btn btn-outline-secondary btn-sm" disabled>Brzy</button></div></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lexa Coaching Hub – Varianta A (Hero)</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root{ --bg1:#0d0f12; --bg2:#1b1f27; --accent:#4fd2ff; }
+  body{margin:0; background:linear-gradient(135deg,var(--bg1),var(--bg2)); color:#fff; font-family:Arial,Helvetica,sans-serif}
+  .hero-wrap{position:relative; overflow:hidden}
+  .hero-bg{position:absolute; inset:0; background:url('hero_bg.jpg') center/cover no-repeat; filter:brightness(.45) saturate(.9);} 
+  .hero-overlay{position:absolute; inset:0; background:radial-gradient(80% 60% at 20% 20%, rgba(79,210,255,.25), transparent 60%), linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,.8));}
+  .hero{position:relative; display:flex; gap:32px; align-items:center; padding:56px 0;}
+  .avatar{width:260px; border-radius:12px; box-shadow:0 8px 26px rgba(0,0,0,.55); background:transparent}
+  .hero h1{font-size:2.6rem; font-weight:800; letter-spacing:.2px; margin:0 0 8px}
+  .hero p{opacity:.9; font-size:1.08rem; max-width:720px}
+  .btn-accent{background:var(--accent); border-color:var(--accent); color:#031b22}
+  .btn-accent:hover{filter:brightness(1.05)}
+  .tiles{padding:28px 0 52px}
+  .tile{background:rgba(255,255,255,.06); padding:22px; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,.35); border:1px solid rgba(79,210,255,.12)}
+  .tile h5{color:var(--accent); font-weight:700}
+</style>
+</head>
+<body>
+  <div class="hero-wrap">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero">
+        <img src="avatar_transparent.png" alt="avatar" class="avatar">
+        <div class="hero-text">
+          <h1>Lexa Coaching Hub</h1>
+          <p>Moje AI nástroje, agenti a coachingové pomůcky na jednom místě. Odkudkoli, online i offline.</p>
+          <div class="d-flex gap-2 flex-wrap mt-2">
+            <a href="/ssc-agent/" class="btn btn-accent btn-lg">Otevřít SSC Agenta</a>
+            <a href="/coaching-planner/" class="btn btn-outline-info btn-lg">Rezervovat termín (Coaching Planner)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container tiles">
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="tile">
+          <h5>SSC Agent</h5>
+          <p>Start / Stop / Continue, e‑maily, PDF export, PWA.</p>
+          <a href="/ssc-agent/" class="btn btn-outline-info btn-sm">Otevřít</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="tile">
+          <h5>Coaching Planner</h5>
+          <p>Vyberte datum a čas, zadejte jméno a telefon, odešlete žádost o termín.</p>
+          <a href="/coaching-planner/" class="btn btn-outline-info btn-sm">Rezervovat</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="tile">
+          <h5>Notes Agent</h5>
+          <p>Zpracování poznámek podle „Lexa stylu“ (brzy).</p>
+          <button class="btn btn-outline-secondary btn-sm" disabled>Brzy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
